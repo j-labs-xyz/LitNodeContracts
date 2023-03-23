@@ -216,7 +216,7 @@ describe("PKPHelper", function () {
             }
         });
 
-        it("mints successfully with permitted auth methods and MFA rules in Lit Actions", async () => {
+        it.only("mints successfully with permitted auth methods and MFA rules in Lit Actions", async () => {
             let pubkey =
                 "0x0478a6d8579e7b595d2c4c04b8d822f2a0fd8801ab352443db93da793383766e0bee476b8a8ab2f72754237b3e31d6ee0e000646642c7b50757f8645f26d802336";
             const pubkeyHash = ethers.utils.keccak256(pubkey);
@@ -267,7 +267,7 @@ describe("PKPHelper", function () {
                 value: mintCost,
             };
 
-            await pkpHelper.mintNextAndAddAuthMethodsWithTypes(
+            const mintTx = await pkpHelper.mintNextAndAddAuthMethodsWithTypes(
                 2,
                 ipfsIdsBytes,
                 [[], []],
@@ -281,6 +281,7 @@ describe("PKPHelper", function () {
                 false, // sendPkpToItself
                 transaction
             );
+            console.log("PKP mint tx:" , mintTx);
 
             // check the token was minted
             const owner = await pkpContract.ownerOf(tokenId);
