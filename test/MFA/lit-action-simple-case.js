@@ -18,5 +18,5 @@ const go = async () => {
 
 const res = await go();
 if (res == false) {
-    throw Error("Exceeded the daily limit");
+    throw Error("The Lit Action return false");
 }
