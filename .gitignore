@@ -17,3 +17,4 @@ node_configs
 
 # Linked contracts
 contracts/ContractResolver.sol
+gas_costs.txt
