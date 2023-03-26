@@ -1,11 +1,11 @@
 
-  PKPHelper
-    Attempt to Mint PKP NFT via PKPHelper
+  PKPHelper with MFA
+    Attempt to Mint PKP NFT via PKPHelper with MFA
 PKP mint tx: {
   hash: '0xd65a328876710f265ec408092953636fa6afa52daba75ff79effdbc641c9933b',
   type: 2,
   accessList: [],
-  blockHash: '0x9548914aef9857f3f1ab2836aa3f5a1d1f1c2b775a869c2e50d3d4e930106486',
+  blockHash: '0x9d1b20d56adb94be9a310ed68b52dd8197477a8377707e365aa5738943d59a16',
   blockNumber: 7,
   transactionIndex: 0,
   confirmations: 1,
@@ -51,5 +51,5 @@ PKP mint tx: {
 |  PubkeyRouter                                         ·           -  ·          -  ·    2253040  ·        [90m7.5 %[39m  ·          [32m[90m-[32m[39m  │
 ·-------------------------------------------------------|--------------|-------------|-------------|---------------|-------------·
 
-  1 passing (30s)
+  1 passing (2s)
 
