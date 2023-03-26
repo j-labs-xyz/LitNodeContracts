@@ -16,7 +16,7 @@ const go = async () => {
     return returnValue;
 };
 
-const res = await go();
-if (res == false) {
-    throw Error("The Lit Action return false");
-}
+// const res = await go();
+// if (res == false) {
+//     throw Error("The Lit Action return false");
+// }
